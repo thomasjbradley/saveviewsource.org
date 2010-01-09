@@ -69,7 +69,7 @@ Tweet: #saveviewsource
 	</ul>
 	<h2><code class="flyout">&lt;h2&gt; </code>Recent Pledges</h2>
 	<div id="tweets"></div>
-	<p><code class="flyout">&lt;p&gt; </code><strong><a href="http://twitter.com/#search?q=%23saveviewsource">See all the other pledgers</a></strong>
+	<p><code class="flyout">&lt;p&gt; </code><strong><a href="http://twitter.com/#search?q=%23saveviewsource">See all the other pledges</a></strong>
 	<p class="pledge"><code class="flyout">&lt;p&gt; </code><strong><a href="http://twitter.com/home?status=I%20pledge%20to%20save%20view%20source!%20http://saveviewsource.org%20%23saveviewsource" title="Help save view source by tweeting your commitment to Save View Source!">tweet: #saveviewsource</a></strong>
 	<div class="footer"><a href="http://thomasjbradley.ca" rel="external" class="thomasjbradley" title="Designed and Developed by Thomas J Bradley">Thomas J Bradley</a></div>
 </div>

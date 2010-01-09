@@ -122,14 +122,14 @@ The Juitter developer shall have no responsability for data loss or damage of an
 								var tweet = $.Juitter.filter(item.text);
 								
 								var date = new Date(item.created_at);
-								var dateMonth = date.getMonth() + 1;
+								var dateMonth = pad(date.getMonth() + 1, 2);
 								
 								mHTML = '<code class="flyout">&lt;li&gt; </code>';
 								mHTML += '<a href="http://www.twitter.com/'+item.from_user+'" class="avatar"><img src="'+item.profile_image_url+'" alt="'+item.from_user+'" width="32" height="32"></a>';
 								mHTML += '<p>'+$.Juitter.textFormat(tweet)+'</p>';
 								mHTML += '<div>';
 								mHTML += '<a href="http://www.twitter.com/'+item.from_user+'" class="user">@'+item.from_user+'</a>';
-								mHTML += '<span class="time">'+date.getFullYear()+'-'+dateMonth+'-'+date.getDate()+' '+date.getHours()+':'+date.getMinutes()+'</span>';
+								mHTML += '<span class="time">'+date.getFullYear()+'-'+dateMonth+'-'+pad(date.getDate(), 2)+' '+pad(date.getHours(), 2)+':'+pad(date.getMinutes(), 2)+'</span>';
 								mHTML += '</div>';
 								
 								$("<li></li>") 
@@ -187,3 +187,14 @@ The Juitter developer shall have no responsability for data loss or damage of an
 		}
 	};	
 })(jQuery);
+
+function pad(number, length)
+{
+	var str = '' + number;
+	while(str.length < length)
+	{
+		str = '0' + str;
+	}
+	
+	return str;
+}
