@@ -67,8 +67,6 @@ Tweet: #saveviewsource
 		<li><a href="http://ajaxian.com/archives/view-source-how-important-was-it-is-it-and-will-it-be" rel="external">View Source; How important was it, is it, and will it be?</a>—Ajaxian
 		<li><a href="http://thomasjbradley.ca/blog/save-view-source" rel="external">Save View Source</a>—Thomas J Bradley
 	</ul>
-	<h2><code class="flyout">&lt;h2&gt; </code>Recent Pledges</h2>
-	<div id="tweets"></div>
 	<p><code class="flyout">&lt;p&gt; </code><strong><a href="http://twitter.com/#search?q=%23saveviewsource">See all the other pledges</a></strong>
 	<p class="pledge"><code class="flyout">&lt;p&gt; </code><strong><a href="http://twitter.com/home?status=I%20pledge%20to%20save%20view%20source!%20http://saveviewsource.org%20%23saveviewsource" title="Help save view source by tweeting your commitment to Save View Source!">tweet: #saveviewsource</a></strong>
 	<div class="footer"><a href="http://thomasjbradley.ca" rel="external" class="thomasjbradley" title="Designed and Developed by Thomas J Bradley">Thomas J Bradley</a></div>
@@ -77,6 +75,7 @@ Tweet: #saveviewsource
 <script src="jquery.juitter.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(document).ready(function() {
+	$('ul').after('	<h2><code class="flyout">&lt;h2&gt; </code>Recent Pledges</h2><div id="tweets"></div>');
 	$.Juitter.start({ searchType:'searchWord', searchObject:'saveviewsource', live:'live-60', placeHolder:'tweets', loadMSG:'Loading pledges…', total:10, openExternalLinks:'sameWindow' });
 });
 </script>
